@@ -28,4 +28,8 @@ echo "upnp=${upnp}" >> server-config.conf
 echo "npcstream=${npcstream}" >> server-config.conf
 echo "priority=${priority}" >> server-config.conf;
 
+#steam
+echo "steam=${steam}" >> server-config.conf;
+echo "lobby=${lobby}" >> server-config.conf;
+
 ./TerrariaServer.bin.x86_64 -config server-config.conf
