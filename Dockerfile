@@ -51,7 +51,9 @@ ENV TERRARIA_DIR=/root/.local/share/Terraria \
     language=en/US \
     upnp=1 \
     npcstream=1 \
-    priority=1
+    priority=1 \
+    steam=0 \
+    lobby=private
 
 RUN mkdir -p ${TERRARIA_DIR}/Worlds
 
