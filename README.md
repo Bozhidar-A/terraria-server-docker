@@ -18,6 +18,8 @@ hexlo/terraria-tmodloader-server</a>
 ### This is a Vanilla server for Terraria PC, packaged as a docker image.  
 <br>
 
+<h2>THESE IMAGES ARE OF THE ORIGINAL REPO</h2>
+
 <p style="color:#0078d7; font-family: Consolas; font-weight: bold;">
   <ins> Docker Hub image: </ins>
 </p>
@@ -32,6 +34,14 @@ hexlo/terraria-server-docker:latest
 
 ```
 ghcr.io/hexlo/terraria-server-docker:latest
+```
+
+<br>
+This repo adds steam support for your server.
+To use this image first run:
+
+```
+docker build -t kufte/scuffed_terraria_server https://github.com/Bozhidar-A/terraria-server-docker.git#main 
 ```
 
 <br>
@@ -169,6 +179,8 @@ If you want the server to start automatically on subsequent runs, you need to pr
 | `upnp` | `1` | Enables/disables automatic universal plug and play. | `upnp=0` |
 | `npcstream` | `1` | Reduces enemy skipping but increases bandwidth usage. The lower the number the less skipping will happen, but more data is sent. 0 is off. | `npcstream=60` |
 | `priority` | (*empty*) | Sets the process priority | `priority=1` |
+| `steam` | `0` | Enables steam services, such as invite steam friends. 0-disabled, 1-enabled | `steam=0` |
+| `lobby` | `private` | Sets if friends can join the server. private-no, lobby-yes | `lobby=private` |
 
 <br>
 
