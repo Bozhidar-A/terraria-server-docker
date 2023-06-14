@@ -86,7 +86,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - 7779:7777
+      - 7777:7777
     volumes:
       - ./Worlds:/root/.local/share/Terraria/Worlds
     environment:
