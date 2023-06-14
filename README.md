@@ -88,6 +88,8 @@ services:
       - port=7777
       - password=mypassword
       - motd="Welcome to hexlo's server! :)"
+      - steam=1
+      - lobby=friends
 ```
 - Launch the container. If you are using a command line interface (cli):  
 `docker-compose up -d`
