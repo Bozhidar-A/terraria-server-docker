@@ -79,7 +79,7 @@ You can rename `docker-compose-example.yml` to `docker-compose.yml` and modify i
 version: '3'
 services:
   terraria-server:
-    # Github mirror: [https://github.com/Bozhidar-A/terraria-server-docke](https://github.com/Bozhidar-A/terraria-server-docke)
+    # Github mirror: https://github.com/Bozhidar-A/terraria-server-docker
     image: kufte/scuffed_terraria_server:latest
     container_name: terraria-server
     restart: unless-stopped
